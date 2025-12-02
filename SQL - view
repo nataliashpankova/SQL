@@ -1,0 +1,17 @@
+Создайте представление v_users_without_phone (название важно для проверки!), которое выводит все поля таблицы users и содержит только те строки, в которых не указан телефон (поле phone пустое).
+
+CREATE VIEW v_users_without_phone AS
+    SELECT *
+    FROM users
+    WHERE phone IS NULL;
+
+
+Одной командой (!) пересоздайте представление v_users_without_phone из прошлого задания, присоединив по внешнему ключу к общей выборке таблицу user_settings.
+
+CREATE OR REPLACE VIEW v_users_without_phone AS
+    SELECT *
+    FROM users
+    INNER JOIN user_settings ON users.id = user_settings.user_id
+    WHERE birthday IS NOT NULL;
+
+
