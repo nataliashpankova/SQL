@@ -5,6 +5,7 @@ CREATE VIEW v_users_without_phone AS
     FROM users
     WHERE phone IS NULL;
 
+---------------------------------------
 
 Одной командой (!) пересоздайте представление v_users_without_phone из прошлого задания, присоединив по внешнему ключу к общей выборке таблицу user_settings.
 
