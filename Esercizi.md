@@ -1,3 +1,4 @@
+
 ---------------------------------ESERCIZIO 1
 
 CREATE DATABASED IF NOT EXISTS telegram;
